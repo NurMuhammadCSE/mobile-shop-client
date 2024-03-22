@@ -5,7 +5,6 @@ import apple from "../../../assets/images/IPHONE.jfif";
 
 const Phone = () => {
   const [phones] = usePhone();
-  console.log(phones)
 
   const huawei = phones.filter((item) => item.brand === "Huawei");
   const Apple = phones.filter((item) => item.brand === "Apple");

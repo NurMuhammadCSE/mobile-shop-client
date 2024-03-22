@@ -4,7 +4,6 @@ import PhoneItem from "../../Shared/PhoneItem/PhoneItem";
 import Cover from "../../Shared/Cover/Cover";
 
 const PhoneCategory = ({ title, items, img }) => {
-  console.log(items);
   return (
     <div>
       {title && items && <Cover img={img} title={title}></Cover>}

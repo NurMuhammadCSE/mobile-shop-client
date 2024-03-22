@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   let [isOpen, setIsOpen] = useState(true);
 
-
   const navOptions = (
     <>
       <li>
@@ -12,7 +11,7 @@ const Navbar = () => {
       </li>
 
       <li>
-        <Link to={`/order`}>Order</Link>
+        <Link to={`/order/Huawei`}>Order</Link>
       </li>
     </>
   );
