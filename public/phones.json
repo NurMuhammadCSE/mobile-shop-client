@@ -1,0 +1,545 @@
+[
+  {
+    "price": 234,
+    "brand": "Apple",
+    "rating": 4.5,
+    "phone_name": "iPhone 13 mini",
+    "slug": "apple_iphone_13_mini-11104",
+    "description": "awesome phone",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg"
+  },
+  {
+    "price": 899,
+    "brand": "Apple",
+    "rating": 4.5,
+    "phone_name": "iPhone 13 Pro",
+    "slug": "apple_iphone_13_pro-11102",
+    "description": "powerful device with advanced features",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-pro.jpg"
+  },
+  {
+    "price": 1099,
+    "brand": "Apple",
+    "rating": 4.5,
+    "phone_name": "iPhone 13 Pro Max",
+    "slug": "apple_iphone_13_pro_max-11089",
+    "description": "top-of-the-line iPhone with exceptional performance",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-pro-max.jpg"
+  },
+  {
+    "price": 499,
+    "brand": "Apple",
+    "rating": 4.5,
+    "phone_name": "iPad mini (2021)",
+    "slug": "apple_ipad_mini_(2021)-11105",
+    "description": "compact tablet with powerful features",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-ipad-mini-2021.jpg"
+  },
+  {
+    "price": 329,
+    "brand": "Apple",
+    "rating": 4.5,
+    "phone_name": "iPad 10.2 (2021)",
+    "slug": "apple_ipad_10_2_(2021)-11106",
+    "description": "affordable yet feature-rich iPad",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-ipad-102-2021-.jpg"
+  },
+  {
+    "price": 799,
+    "brand": "Apple",
+    "rating": 4.5,
+    "phone_name": "Watch Edition Series 7",
+    "slug": "apple_watch_edition_series_7-11147",
+    "description": "luxurious smartwatch with premium materials",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-watch-series-7-titanium.jpg"
+  },
+  {
+    "price": 799,
+    "brand": "Apple",
+    "rating": 4.5,
+    "phone_name": "iPhone 13",
+    "slug": "apple_iphone_13-11103",
+    "description": "latest iPhone model with stunning design",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13.jpg"
+  },
+  {
+    "price": 399,
+    "brand": "Apple",
+    "rating": 4.5,
+    "phone_name": "Watch Series 7 Aluminum",
+    "slug": "apple_watch_series_7_aluminum-11107",
+    "description": "premium smartwatch with lightweight aluminum construction",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-watch-series-7-aluminum.jpg"
+  },
+  {
+    "price": 699,
+    "brand": "Apple",
+    "rating": 4.5,
+    "phone_name": "Watch Series 7",
+    "slug": "apple_watch_series_7-11146",
+    "description": "advanced smartwatch with health monitoring features",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-watch-series-7-stainless-steel.jpg"
+  },
+  {
+    "price": 799,
+    "brand": "Apple",
+    "rating": 4.5,
+    "phone_name": "iPad Pro 11 (2021)",
+    "slug": "apple_ipad_pro_11_(2021)-10865",
+    "description": "professional-grade tablet for productivity",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-ipad-pro-11-2021.jpg"
+  },
+  {
+    "brand": "Huawei",
+    "rating": 4.5,
+    "phone_name": "Enjoy 20e",
+    "slug": "huawei_enjoy_20e-11177",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-20e.jpg",
+    "price": 199,
+    "description": "Budget-friendly smartphone with decent features."
+  },
+  {
+    "brand": "Huawei",
+    "rating": 4.5,
+    "phone_name": "P50 Pocket",
+    "slug": "huawei_p50_pocket-11280",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/huawei-p50-pocket.jpg",
+    "price": 899,
+    "description": "Compact and stylish smartphone designed for portability."
+  },
+  {
+    "brand": "Huawei",
+    "rating": 4.5,
+    "phone_name": "nova 8 SE 4G",
+    "slug": "huawei_nova_8_se_4g-11247",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-8-se.jpg",
+    "price": 349,
+    "description": "4G variant of the nova 8 SE with impressive camera capabilities."
+  },
+  {
+    "brand": "Huawei",
+    "rating": 4.5,
+    "phone_name": "Watch GT 3",
+    "slug": "huawei_watch_gt_3-11171",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/huawei-watch-gt3-new.jpg",
+    "price": 299,
+    "description": "Sleek smartwatch with long battery life and fitness tracking features."
+  },
+  {
+    "brand": "Huawei",
+    "rating": 4.5,
+    "phone_name": "Watch Fit mini",
+    "slug": "huawei_watch_fit_mini-11176",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/huawei-watch-fit-mini.jpg",
+    "price": 129,
+    "description": "Compact and lightweight fitness tracker with a vibrant display."
+  },
+  {
+    "brand": "Huawei",
+    "rating": 4.5,
+    "phone_name": "Watch GT Runner",
+    "slug": "huawei_watch_gt_runner-11227",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/huawei-gt-runner.jpg",
+    "price": 249,
+    "description": "Designed for runners with advanced workout tracking and GPS features."
+  },
+  {
+    "brand": "Huawei",
+    "rating": 4.5,
+    "phone_name": "nova Y60",
+    "slug": "huawei_nova_y60-11328",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-y60.jpg",
+    "price": 179,
+    "description": "Affordable smartphone with a modern design and decent performance."
+  },
+  {
+    "brand": "Huawei",
+    "rating": 4.5,
+    "phone_name": "nova 9 Pro",
+    "slug": "huawei_nova_9_pro-11120",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-9-pro-5g-.jpg",
+    "price": 699,
+    "description": "High-end smartphone with 5G connectivity and impressive camera features."
+  },
+  {
+    "brand": "Huawei",
+    "rating": 4.5,
+    "phone_name": "nova 9",
+    "slug": "huawei_nova_9-11121",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-9-5g.jpg",
+    "price": 599,
+    "description": "Mid-range smartphone with 5G support and a sleek design."
+  },
+  {
+    "brand": "Huawei",
+    "rating": 4.5,
+    "phone_name": "P50 Pro",
+    "slug": "huawei_p50_pro-11029",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/huawei-p50-pro.jpg",
+    "price": 1299,
+    "description": "Flagship smartphone with a powerful camera system and premium design."
+  },
+
+  {
+    "brand": "Samsung",
+    "rating": 4.5,
+    "phone_name": "Galaxy S22 5G",
+    "slug": "samsung_galaxy_s22_5g-11253",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s22-5g.jpg",
+    "price": 999,
+    "description": "Flagship smartphone with powerful performance and advanced camera features."
+  },
+  {
+    "brand": "Samsung",
+    "rating": 4.5,
+    "phone_name": "Galaxy Tab S8+",
+    "slug": "samsung_galaxy_tab_s8+-11342",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-tab-s8-plus.jpg",
+    "price": 799,
+    "description": "Large-screen tablet with a vibrant display and sleek design."
+  },
+  {
+    "brand": "Samsung",
+    "rating": 4.5,
+    "phone_name": "Galaxy Tab S8 Ultra",
+    "slug": "samsung_galaxy_tab_s8_ultra-11274",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-tab-s8-ultra.jpg",
+    "price": 1299,
+    "description": "Premium tablet with an ultra-large display and high-end specifications."
+  },
+  {
+    "brand": "Samsung",
+    "rating": 4.5,
+    "phone_name": "Galaxy S22+ 5G",
+    "slug": "samsung_galaxy_s22+_5g-11252",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s22-plus-5g.jpg",
+    "price": 1099,
+    "description": "Mid-range variant of the Galaxy S22 series with impressive features."
+  },
+  {
+    "brand": "Samsung",
+    "rating": 4.5,
+    "phone_name": "Galaxy Tab S8",
+    "slug": "samsung_galaxy_tab_s8-11343",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-tab-s8.jpg",
+    "price": 699,
+    "description": "Premium tablet with a compact design and powerful performance."
+  },
+  {
+    "brand": "Samsung",
+    "rating": 4.5,
+    "phone_name": "Galaxy S21 FE 5G",
+    "slug": "samsung_galaxy_s21_fe_5g-10954",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s21-fe-5g.jpg",
+    "price": 699,
+    "description": "Affordable flagship smartphone with 5G connectivity and a stylish design."
+  },
+  {
+    "brand": "Samsung",
+    "rating": 4.5,
+    "phone_name": "Galaxy S22 Ultra 5G",
+    "slug": "samsung_galaxy_s22_ultra_5g-11251",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s22-ultra-5g.jpg",
+    "price": 1399,
+    "description": "Premium flagship smartphone with a large display and advanced camera setup."
+  },
+  {
+    "brand": "Samsung",
+    "rating": 4.5,
+    "phone_name": "Galaxy Tab A8 10.5 (2021)",
+    "slug": "samsung_galaxy_tab_a8_10_5_(2021)-11265",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-tab-a8-105-2021-new.jpg",
+    "price": 299,
+    "description": "Affordable tablet with a large display and long battery life."
+  },
+  {
+    "brand": "Samsung",
+    "rating": 4.5,
+    "phone_name": "Galaxy A13 5G",
+    "slug": "samsung_galaxy_a13_5g-11149",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a13-5g-.jpg",
+    "price": 299,
+    "description": "Mid-range smartphone with 5G connectivity and a versatile camera system."
+  },
+  {
+    "brand": "Samsung",
+    "rating": 4.5,
+    "phone_name": "Galaxy A03 Core",
+    "slug": "samsung_galaxy_a03_core-11215",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a03-core.jpg",
+    "price": 149,
+    "description": "Budget-friendly smartphone with essential features and long battery life."
+  },
+  {
+    "brand": "Oppo",
+    "rating": 4.5,
+    "phone_name": "Find X5",
+    "slug": "oppo_find_x5-11378",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/oppo-find-x5.jpg",
+    "price": 899,
+    "description": "High-end flagship smartphone with advanced camera capabilities and sleek design."
+  },
+  {
+    "brand": "Oppo",
+    "rating": 4.5,
+    "phone_name": "Find X5 Pro",
+    "slug": "oppo_find_x5_pro-11236",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/oppo-find-x5-pro.jpg",
+    "price": 1099,
+    "description": "Premium flagship smartphone with top-of-the-line features and powerful performance."
+  },
+  {
+    "brand": "Oppo",
+    "rating": 4.5,
+    "phone_name": "Find X5 Lite",
+    "slug": "oppo_find_x5_lite-11323",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/oppo-find-x5-lite.jpg",
+    "price": 699,
+    "description": "Mid-range smartphone with a stylish design and impressive display."
+  },
+  {
+    "brand": "Oppo",
+    "rating": 4.5,
+    "phone_name": "Pad",
+    "slug": "oppo_pad-11322",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/oppo-pad.jpg",
+    "price": 399,
+    "description": "Compact tablet with a large display and long-lasting battery."
+  },
+  {
+    "brand": "Oppo",
+    "rating": 4.5,
+    "phone_name": "A76",
+    "slug": "oppo_a76-11367",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/oppo-a36.jpg",
+    "price": 249,
+    "description": "Budget-friendly smartphone with decent performance and modern design."
+  },
+  {
+    "brand": "Oppo",
+    "rating": 4.5,
+    "phone_name": "Reno7 5G",
+    "slug": "oppo_reno7_5g-11350",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/oppo-reno7.jpg",
+    "price": 599,
+    "description": "5G-enabled smartphone with a sleek design and versatile camera setup."
+  },
+  {
+    "brand": "Oppo",
+    "rating": 4.5,
+    "phone_name": "A96",
+    "slug": "oppo_a96-11316",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/oppo-a96.jpg",
+    "price": 349,
+    "description": "Mid-range smartphone with a large display and impressive battery life."
+  },
+  {
+    "brand": "Oppo",
+    "rating": 4.5,
+    "phone_name": "Reno6 Lite",
+    "slug": "oppo_reno6_lite-11196",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/oppo-reno6-lite.jpg",
+    "price": 399,
+    "description": "Budget-friendly variant of the Reno6 series with decent specifications."
+  },
+  {
+    "brand": "Oppo",
+    "rating": 4.5,
+    "phone_name": "A36",
+    "slug": "oppo_a36-11314",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/oppo-a36.jpg",
+    "price": 199,
+    "description": "Affordable smartphone with basic features and a compact design."
+  },
+  {
+    "brand": "Oppo",
+    "rating": 4.5,
+    "phone_name": "A11s",
+    "slug": "oppo_a11s-11288",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/oppo-a11s.jpg",
+    "price": 279,
+    "description": "Mid-range smartphone with a stylish design and decent performance."
+  },
+
+  {
+    "brand": "Google",
+    "rating": 4.5,
+    "phone_name": "Pixel 6",
+    "slug": "google_pixel_6-11182",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/google-pixel-6.jpg",
+    "price": 799,
+    "description": "Flagship smartphone with top-tier camera performance and stock Android experience."
+  },
+  {
+    "brand": "Google",
+    "rating": 4.5,
+    "phone_name": "Pixel 6 Pro",
+    "slug": "google_pixel_6_pro-11183",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/google-pixel-6-pro.jpg",
+    "price": 999,
+    "description": "Premium flagship smartphone with advanced camera features and high-end specifications."
+  },
+  {
+    "brand": "Google",
+    "rating": 4.5,
+    "phone_name": "Pixel 5a 5G",
+    "slug": "google_pixel_5a_5g-10896",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/google-pixel-5a-5g.jpg",
+    "price": 449,
+    "description": "Mid-range 5G smartphone with a clean software experience and reliable performance."
+  },
+  {
+    "brand": "Google",
+    "rating": 4.5,
+    "phone_name": "Pixel 5",
+    "slug": "google_pixel_5-10363",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/google-pixel-5.jpg",
+    "price": 699,
+    "description": "Premium mid-range smartphone with a focus on camera quality and software features."
+  },
+  {
+    "brand": "Google",
+    "rating": 4.5,
+    "phone_name": "Pixel 4a 5G",
+    "slug": "google_pixel_4a_5g-10218",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/google-pixel-4a-5g.jpg",
+    "price": 499,
+    "description": "Affordable 5G smartphone with a clean software experience and capable camera system."
+  },
+  {
+    "brand": "Google",
+    "rating": 4.5,
+    "phone_name": "Pixel 4a",
+    "slug": "google_pixel_4a-10043",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/google-pixel-4a.jpg",
+    "price": 349,
+    "description": "Budget-friendly smartphone with a compact design and excellent camera performance."
+  },
+  {
+    "brand": "Google",
+    "rating": 4.5,
+    "phone_name": "Pixel 3a",
+    "slug": "google_pixel_3a-9680",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/google-pixel-3a.jpg",
+    "price": 399,
+    "description": "Mid-range smartphone with a clean Android experience and a great camera."
+  },
+  {
+    "brand": "Google",
+    "rating": 4.5,
+    "phone_name": "Pixel 3a XL",
+    "slug": "google_pixel_3a_xl-9681",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/google-pixel-3a.jpg",
+    "price": 479,
+    "description": "Larger variant of the Pixel 3a with a bigger display and longer battery life."
+  },
+  {
+    "brand": "Google",
+    "rating": 4.5,
+    "phone_name": "Pixel 3",
+    "slug": "google_pixel_3-9256",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/google-pixel-3-.jpg",
+    "price": 799,
+    "description": "Flagship smartphone with a top-notch camera and a pure Android experience."
+  },
+  {
+    "brand": "Google",
+    "rating": 4.5,
+    "phone_name": "Pixel 3 XL",
+    "slug": "google_pixel_3_xl-9255",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/google-pixel-3-xl.jpg",
+    "price": 899,
+    "description": "Larger variant of the Pixel 3 with a bigger display and longer battery life."
+  },
+
+  {
+    "brand": "Popular",
+    "rating": 4.5,
+    "phone_name": "Galaxy S22 Ultra",
+    "slug": "popular_galaxy_s22_ultra-12345",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg",
+    "price": 1299,
+    "description": "The flagship device from Popular, featuring cutting-edge technology and premium design."
+  },
+  {
+    "brand": "Popular",
+    "rating": 4.5,
+    "phone_name": "iPhone 14 Pro Max",
+    "slug": "popular_iphone_14_pro_max-23456",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg",
+    "price": 1399,
+    "description": "A powerful smartphone from Popular's Pro series, known for its exceptional performance and sleek design."
+  },
+  {
+    "brand": "Popular",
+    "rating": 4.5,
+    "phone_name": "Pixel 7 Pro",
+    "slug": "popular_pixel_7_pro-34567",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg",
+    "price": 1099,
+    "description": "An affordable option from Popular's Lite series, offering great value for money without compromising on features."
+  },
+  {
+    "brand": "Popular",
+    "rating": 4.5,
+    "phone_name": "Xperia 1 III",
+    "slug": "popular_xperia_1_iii-45678",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg",
+    "price": 1099,
+    "description": "The ultimate flagship device from Popular's Max series, packed with top-of-the-line features and unparalleled performance."
+  },
+  {
+    "brand": "Popular",
+    "rating": 4.5,
+    "phone_name": "Mi 12 Pro",
+    "slug": "popular_mi_12_pro-56789",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg",
+    "price": 999,
+    "description": "A versatile device from Popular's Zoom series, perfect for photography enthusiasts with its advanced camera capabilities."
+  },
+  {
+    "brand": "Popular",
+    "rating": 4.5,
+    "phone_name": "OnePlus 10 Pro",
+    "slug": "popular_oneplus_10_pro-67890",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg",
+    "price": 899,
+    "description": "The futuristic foldable smartphone from Popular's Flex series, combining innovation with style for a truly unique experience."
+  },
+  {
+    "brand": "Popular",
+    "rating": 4.5,
+    "phone_name": "Redmi Note 11",
+    "slug": "popular_redmi_note_11-78901",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg",
+    "price": 399,
+    "description": "A stylish and feature-packed device from Popular's Neo series, offering a perfect balance of performance and affordability."
+  },
+  {
+    "brand": "Popular",
+    "rating": 4.5,
+    "phone_name": "Zenfone 9 Pro",
+    "slug": "popular_zenfone_9_pro-89012",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg",
+    "price": 799,
+    "description": "The epitome of luxury and sophistication, Popular's Ultra series redefines premium smartphones with its exquisite design and unmatched performance."
+  },
+  {
+    "brand": "Popular",
+    "rating": 4.5,
+    "phone_name": "Moto G Power (2023)",
+    "slug": "popular_moto_g_power_2023-90123",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg",
+    "price": 299,
+    "description": "An upgraded version of Popular's Lite series, the Lite Plus offers enhanced features and performance at an affordable price."
+  },
+  {
+    "brand": "Popular",
+    "rating": 4.5,
+    "phone_name": "Galaxy A53 5G",
+    "slug": "popular_galaxy_a53_5g-01234",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg",
+    "price": 449,
+    "description": "The sleek and lightweight Popular Air is designed for those who prioritize portability without compromising on performance."
+  }
+]
