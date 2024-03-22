@@ -14,9 +14,9 @@ const Cover = ({ img, title }) => {
           <div className="max-w-md">
             <h1 className="mb-5 text-5xl font-bold uppercase">{title}</h1>
             <p className="mb-5">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
+              The new mobile phone features state-of-the-art technology,
+              promising users an exceptional experience with its sleek design
+              and advanced features
             </p>
           </div>
         </div>

@@ -9,9 +9,11 @@ const Navbar = () => {
       <li>
         <Link to={`/phone`}>Phone</Link>
       </li>
-
       <li>
         <Link to={`/order/Huawei`}>Order</Link>
+      </li>
+      <li>
+        <Link to={`/login`}>Login</Link>
       </li>
     </>
   );

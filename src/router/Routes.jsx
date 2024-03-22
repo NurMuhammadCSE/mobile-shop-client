@@ -4,6 +4,7 @@ import ErrorPage from "../components/Error/ErrorPage";
 import Home from "../pages/Home/Home/Home";
 import Phone from "../pages/Phone/Phone/Phone";
 import Order from "../pages/Order/Order/Order";
+import Login from "../pages/Login/Login";
 
 export const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ export const router = createBrowserRouter([
         path: "order/:brand",
         element: <Order></Order>,
       },
+      {
+        path:'login',
+        element: <Login></Login>
+      }
     ],
   },
 ]);
