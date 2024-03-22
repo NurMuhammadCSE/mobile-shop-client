@@ -1,0 +1,42 @@
+[
+  {
+    "user": "John Doe",
+    "rating": 4.5,
+    "comment": "Great phone, excellent camera quality and performance.",
+    "date": "2024-03-21",
+    "helpful_votes": 20,
+    "unhelpful_votes": 2
+  },
+  {
+    "user": "Jane Smith",
+    "rating": 3.0,
+    "comment": "Battery life could be better, but overall a decent phone.",
+    "date": "2024-03-20",
+    "helpful_votes": 15,
+    "unhelpful_votes": 5
+  },
+  {
+    "user": "Michael Johnson",
+    "rating": 5.0,
+    "comment": "Absolutely love this phone, fast charging is a game changer!",
+    "date": "2024-03-19",
+    "helpful_votes": 25,
+    "unhelpful_votes": 1
+  },
+  {
+    "user": "Emily Brown",
+    "rating": 2.5,
+    "comment": "Disappointed with the build quality, feels cheap compared to previous models.",
+    "date": "2024-03-18",
+    "helpful_votes": 10,
+    "unhelpful_votes": 8
+  },
+  {
+    "user": "David Lee",
+    "rating": 4.0,
+    "comment": "Great value for money, sleek design and good performance.",
+    "date": "2024-03-17",
+    "helpful_votes": 18,
+    "unhelpful_votes": 3
+  }
+]

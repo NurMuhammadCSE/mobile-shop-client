@@ -457,7 +457,7 @@
     "rating": 4.5,
     "phone_name": "Galaxy S22 Ultra",
     "slug": "popular_galaxy_s22_ultra-12345",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s22-5g.jpg",
     "price": 1299,
     "description": "The flagship device from Popular, featuring cutting-edge technology and premium design."
   },
@@ -488,48 +488,13 @@
     "price": 1099,
     "description": "The ultimate flagship device from Popular's Max series, packed with top-of-the-line features and unparalleled performance."
   },
-  {
-    "brand": "Popular",
-    "rating": 4.5,
-    "phone_name": "Mi 12 Pro",
-    "slug": "popular_mi_12_pro-56789",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg",
-    "price": 999,
-    "description": "A versatile device from Popular's Zoom series, perfect for photography enthusiasts with its advanced camera capabilities."
-  },
-  {
-    "brand": "Popular",
-    "rating": 4.5,
-    "phone_name": "OnePlus 10 Pro",
-    "slug": "popular_oneplus_10_pro-67890",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg",
-    "price": 899,
-    "description": "The futuristic foldable smartphone from Popular's Flex series, combining innovation with style for a truly unique experience."
-  },
-  {
-    "brand": "Popular",
-    "rating": 4.5,
-    "phone_name": "Redmi Note 11",
-    "slug": "popular_redmi_note_11-78901",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg",
-    "price": 399,
-    "description": "A stylish and feature-packed device from Popular's Neo series, offering a perfect balance of performance and affordability."
-  },
-  {
-    "brand": "Popular",
-    "rating": 4.5,
-    "phone_name": "Zenfone 9 Pro",
-    "slug": "popular_zenfone_9_pro-89012",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg",
-    "price": 799,
-    "description": "The epitome of luxury and sophistication, Popular's Ultra series redefines premium smartphones with its exquisite design and unmatched performance."
-  },
+
   {
     "brand": "Popular",
     "rating": 4.5,
     "phone_name": "Moto G Power (2023)",
     "slug": "popular_moto_g_power_2023-90123",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-20e.jpg",
     "price": 299,
     "description": "An upgraded version of Popular's Lite series, the Lite Plus offers enhanced features and performance at an affordable price."
   },
@@ -538,7 +503,7 @@
     "rating": 4.5,
     "phone_name": "Galaxy A53 5G",
     "slug": "popular_galaxy_a53_5g-01234",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-pro-max.jpg",
     "price": 449,
     "description": "The sleek and lightweight Popular Air is designed for those who prioritize portability without compromising on performance."
   }
