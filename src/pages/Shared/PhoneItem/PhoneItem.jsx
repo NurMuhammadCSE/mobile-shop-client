@@ -1,8 +1,8 @@
 import { Rating } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
 
-const PhoneItem = ({ item }) => {
-  const { phone_name, price, rating, image } = item;
+const PhoneItem = ({ phone }) => {
+  const { phone_name, price, rating, image } = phone;
 
   return (
     <div>

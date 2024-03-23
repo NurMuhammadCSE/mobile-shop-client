@@ -21,7 +21,6 @@ const Order = () => {
   const initialIndex = brands.indexOf(brand);
   const [tabIndex, setTabIndex] = useState(initialIndex);
 
-  console.log(phones)
   return (
     <div>
       <Cover img={apple} title={"Our Phones"}></Cover>

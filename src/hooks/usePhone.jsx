@@ -5,7 +5,7 @@ const usePhone = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("phones.json")
+    fetch("http://localhost:5000/phone")
       .then((res) => res.json())
       .then((data) => {
         setPhones(data);

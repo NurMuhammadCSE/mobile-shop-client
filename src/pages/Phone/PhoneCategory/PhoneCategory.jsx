@@ -9,7 +9,7 @@ const PhoneCategory = ({ title, items, img }) => {
       {title && items && <Cover img={img} title={title}></Cover>}
       <div className="mt-10 grid md:grid-cols-3 gap-10 justify-center items-center">
         {items.map((item) => (
-          <PhoneItem key={item.brand} item={item}></PhoneItem>
+          <PhoneItem key={item.brand} phone={item}></PhoneItem>
         ))}
       </div>
       <Link to={`/order/${title}`}>
