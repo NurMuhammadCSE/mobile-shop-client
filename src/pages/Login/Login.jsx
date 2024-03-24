@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { useContext, useEffect, useState } from "react";
 import {
   loadCaptchaEnginge,
@@ -18,7 +17,6 @@ const Login = () => {
   const location = useLocation();
 
   const from = location.state?.from?.pathname || "/";
-  console.log("state in the location login page", location.state);
 
   useEffect(() => {
     loadCaptchaEnginge(6);
@@ -29,7 +27,6 @@ const Login = () => {
     const form = event.target;
     const email = form.email.value;
     const password = form.password.value;
-    console.log(email, password);
     signIn(email, password).then((result) => {
       const user = result.user;
       console.log(user);
@@ -48,78 +45,88 @@ const Login = () => {
 
   const handleValidateCaptcha = (e) => {
     const user_captcha_value = e.target.value;
-    if (validateCaptcha(user_captcha_value)) {
-      setDisabled(false);
-    } else {
-      setDisabled(true);
-    }
+    setDisabled(!validateCaptcha(user_captcha_value));
   };
 
   return (
     <>
       <Helmet>
-        <title>Bistro Boss | Login</title>
+        <title>Mobile Shop | Login</title>
       </Helmet>
-      <div className="hero min-h-screen bg-base-200">
-        <div className="hero-content flex-col md:flex-row-reverse">
-          <div className="card max-w-sm shadow-2xl bg-base-100">
-            <form onSubmit={handleLogin} className="card-body">
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text">Email</span>
+      <div className=" flex items-center justify-center min-h-screen bg-gray-100">
+        <div className="max-w-md w-full mx-auto overflow-hidden bg-white rounded-lg shadow-lg">
+          <div className="px-6 py-4">
+            <h2 className="text-3xl font-semibold text-center mb-4">Log In</h2>
+            <form onSubmit={handleLogin}>
+              <div className="mb-4">
+                <label
+                  className="block text-gray-700 text-sm font-bold mb-2"
+                  htmlFor="email"
+                >
+                  Email
                 </label>
                 <input
+                  className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-indigo-500"
+                  id="email"
                   type="email"
                   name="email"
-                  placeholder="email"
-                  className="input input-bordered"
+                  placeholder="Enter your email"
                 />
               </div>
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text">Password</span>
+              <div className="mb-4">
+                <label
+                  className="block text-gray-700 text-sm font-bold mb-2"
+                  htmlFor="password"
+                >
+                  Password
                 </label>
                 <input
+                  className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-indigo-500"
+                  id="password"
                   type="password"
                   name="password"
-                  placeholder="password"
-                  className="input input-bordered"
+                  placeholder="Enter your password"
                 />
-                <label className="label">
-                  <a href="#" className="label-text-alt link link-hover">
-                    Forgot password?
-                  </a>
-                </label>
+                <Link
+                  className="text-sm text-indigo-600 hover:underline"
+                  to="/forgot-password"
+                >
+                  Forgot password?
+                </Link>
               </div>
-              <div className="form-control">
-                <label className="label">
-                  <LoadCanvasTemplate />
+              <div className="mb-4">
+                <label
+                  className="block text-gray-700 text-sm font-bold mb-2"
+                  htmlFor="captcha"
+                >
+                  Captcha
                 </label>
+                <LoadCanvasTemplate />
                 <input
                   onBlur={handleValidateCaptcha}
+                  className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-indigo-500"
+                  id="captcha"
                   type="text"
                   name="captcha"
-                  placeholder="type the captcha above"
-                  className="input input-bordered"
+                  placeholder="Enter the captcha above"
                 />
               </div>
-              <div className="form-control mt-6">
-                {/* TODO: apply disabled for re captcha */}
-                <input
-                  disabled={false}
-                  className="btn btn-primary"
-                  type="submit"
-                  value="Login"
-                />
-              </div>
+              <button
+                disabled={disabled}
+                className="w-full px-3 py-4 text-white rounded-md bg-indigo-600 focus:outline-none"
+                type="submit"
+              >
+                Login
+              </button>
             </form>
-            <p className="px-6">
-              <small>
-                New Here? <Link to="/signup">Create an account</Link>{" "}
-              </small>
+            <p className="text-center mt-4">
+              New Here?{" "}
+              <Link className="text-indigo-600 hover:underline" to="/signup">
+                Create an account
+              </Link>
             </p>
-            <SocialLogin></SocialLogin>
           </div>
+          <SocialLogin />
         </div>
       </div>
     </>

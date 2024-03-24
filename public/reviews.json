@@ -1,6 +1,7 @@
 [
   {
     "user": "John Doe",
+    "profile": "https://source.unsplash.com/200x200/?portrait",
     "rating": 4.5,
     "comment": "Great phone, excellent camera quality and performance.",
     "date": "2024-03-21",
@@ -9,6 +10,7 @@
   },
   {
     "user": "Jane Smith",
+    "profile": "https://source.unsplash.com/200x200/?portrait",
     "rating": 3.0,
     "comment": "Battery life could be better, but overall a decent phone.",
     "date": "2024-03-20",
@@ -17,6 +19,7 @@
   },
   {
     "user": "Michael Johnson",
+    "profile": "https://source.unsplash.com/200x200/?portrait",
     "rating": 5.0,
     "comment": "Absolutely love this phone, fast charging is a game changer!",
     "date": "2024-03-19",
@@ -25,6 +28,7 @@
   },
   {
     "user": "Emily Brown",
+    "profile": "https://source.unsplash.com/200x200/?portrait",
     "rating": 2.5,
     "comment": "Disappointed with the build quality, feels cheap compared to previous models.",
     "date": "2024-03-18",
@@ -33,6 +37,7 @@
   },
   {
     "user": "David Lee",
+    "profile": "https://source.unsplash.com/200x200/?portrait",
     "rating": 4.0,
     "comment": "Great value for money, sleek design and good performance.",
     "date": "2024-03-17",

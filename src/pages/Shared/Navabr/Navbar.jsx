@@ -14,6 +14,9 @@ const Navbar = () => {
   const navOptions = (
     <>
       <li>
+        <Link to={`/`}>Home</Link>
+      </li>
+      <li>
         <Link to={`/phone`}>Phone</Link>
       </li>
       <li>
@@ -64,7 +67,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="navbar fixed z-10 bg-opacity-30 max-w-screen-xl ">
+      <div className="navbar fixed z-10 bg-opacity-30 max-w-screen-xl bg-black text-white">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -85,12 +88,14 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-sm dropdown-content mt-3 z-[1] font-bold p-2 shadow bg-base-100 rounded-box w-52"
             >
               {navOptions}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">Mobile Store</a>
+          <Link to={"/"} className="btn btn-ghost text-xl">
+            Mobile Store
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navOptions}</ul>
@@ -110,7 +115,7 @@ const Navbar = () => {
             {isOpen && user && user.email && (
               <ul
                 tabIndex={0}
-                className="menu menu-sm dropdown-content z-[1] p-2 shadow bg-base-100 rounded-box w-36"
+                className="menu menu-sm dropdown-content z-[1] p-2 shadow bg-base-100 rounded-box text-black w-36"
               >
                 <li>
                   <Link onClick={logOut}>Logout</Link>

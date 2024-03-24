@@ -16,6 +16,9 @@ import AdminRoute from "./AdminRoute";
 import AdminHome from "../pages/Dashboard/AdminHome/AdminHome";
 import ManageItems from "../pages/Dashboard/ManageItems/ManageItems";
 import UpdateItems from "../pages/Dashboard/UpdateItems/UpdateItems";
+import AddItems from "../pages/Dashboard/AddItems/AddItems";
+import AllUsers from "../pages/Dashboard/AllUsers/AllUsers";
+import AddReview from "../pages/Home/AddReview/AddReview";
 
 export const router = createBrowserRouter([
   {
@@ -70,6 +73,10 @@ export const router = createBrowserRouter([
         path: "paymentHistory",
         element: <PaymentHistory></PaymentHistory>,
       },
+      {
+        path: "review",
+        element: <AddReview></AddReview>,
+      },
 
       // admin routes
       {
@@ -82,13 +89,39 @@ export const router = createBrowserRouter([
       },
       {
         path: "manageItems",
-        element: <ManageItems></ManageItems>,
+        element: (
+          <AdminRoute>
+            <ManageItems></ManageItems>
+          </AdminRoute>
+        ),
       },
       {
         path: "updateItem/:id",
-        element: <UpdateItems></UpdateItems>,
+        element: (
+          <AdminRoute>
+            <UpdateItems></UpdateItems>
+          </AdminRoute>
+        ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/phone/${params.id}`),
+          fetch(
+            `https://mobile-store-server-six.vercel.app/phone/${params.id}`
+          ),
+      },
+      {
+        path: "addItems",
+        element: (
+          <AdminRoute>
+            <AddItems></AddItems>
+          </AdminRoute>
+        ),
+      },
+      {
+        path: "users",
+        element: (
+          <AdminRoute>
+            <AllUsers></AllUsers>
+          </AdminRoute>
+        ),
       },
     ],
   },

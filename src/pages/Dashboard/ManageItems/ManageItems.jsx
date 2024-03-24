@@ -28,7 +28,7 @@ const ManageItems = () => {
           Swal.fire({
             position: "top-end",
             icon: "success",
-            title: `${item.name} has been deleted`,
+            title: `${item.phone_name} has been deleted`,
             showConfirmButton: false,
             timer: 1500,
           });
@@ -41,7 +41,6 @@ const ManageItems = () => {
     <div>
       <SectionTitle
         heading="Manage All Items"
-        subHeading="Hurry up"
       ></SectionTitle>
       <div>
         <div className="overflow-x-auto">

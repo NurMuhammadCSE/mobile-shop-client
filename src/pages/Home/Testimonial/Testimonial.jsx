@@ -16,7 +16,7 @@ import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 const Testimonial = () => {
   const [reviews, setReviews] = useState([]);
   useEffect(() => {
-    fetch("reviews.json")
+    fetch("https://mobile-store-server-six.vercel.app/review")
       .then((res) => res.json())
       .then((data) => {
         setReviews(data);
@@ -25,10 +25,7 @@ const Testimonial = () => {
 
   return (
     <div className="my-15">
-      <SectionTitle
-        subHeading="What Our Client Say"
-        heading={"Testimonials"}
-      ></SectionTitle>
+      <SectionTitle heading={"Reviews"}></SectionTitle>
       <Swiper
         cssMode={true}
         navigation={true}
@@ -47,6 +44,11 @@ const Testimonial = () => {
                 readOnly
               />
               <h3 className="text-2xl text-orange-400">{review.user}</h3>
+              <div className="mt-4 avatar">
+                <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                  <img src={review.profile} />
+                </div>
+              </div>{" "}
               <p className="py-8">{review.comment}</p>
             </div>
           </SwiperSlide>

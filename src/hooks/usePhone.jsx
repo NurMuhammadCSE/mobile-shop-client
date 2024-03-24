@@ -6,12 +6,12 @@ import useAxiosSecure from "./useAxiosSecure";
 import axios from "axios";
 
 const usePhone = () => {
-  const axiosPublic = useAxiosPublic()
+  const axiosPublic = useAxiosPublic();
   // const [phones, setPhones] = useState([]);
   // const [loading, setLoading] = useState(true);
 
   // useEffect(() => {
-  //   fetch("http://localhost:5000/phone")
+  //   fetch("https://mobile-store-server-six.vercel.app/phone")
   //     .then((res) => res.json())
   //     .then((data) => {
   //       setPhones(data);

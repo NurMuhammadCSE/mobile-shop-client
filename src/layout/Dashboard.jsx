@@ -1,8 +1,5 @@
 import {
   FaAd,
-  FaBook,
-  FaCalendar,
-  FaEnvelope,
   FaHome,
   FaList,
   FaSearch,
@@ -23,7 +20,7 @@ const Dashboard = () => {
   return (
     <div className="flex">
       {/* dashboard side bar */}
-      <div className="w-64 min-h-screen bg-orange-400">
+      <div className="w-64 min-h-screen bg-[#41b3a3]">
         <ul className="menu p-4">
           {isAdmin ? (
             <>
@@ -46,12 +43,6 @@ const Dashboard = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/dashboard/bookings">
-                  <FaBook></FaBook>
-                  Manage Bookings
-                </NavLink>
-              </li>
-              <li>
                 <NavLink to="/dashboard/users">
                   <FaUsers></FaUsers>
                   All Users
@@ -64,12 +55,6 @@ const Dashboard = () => {
                 <NavLink to="/dashboard/userHome">
                   <FaHome></FaHome>
                   User Home
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/dashboard/history">
-                  <FaCalendar></FaCalendar>
-                  Not History
                 </NavLink>
               </li>
               <li>
@@ -101,15 +86,9 @@ const Dashboard = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/order/salad">
+            <NavLink to="/phone">
               <FaSearch></FaSearch>
-              Menu
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/order/contact">
-              <FaEnvelope></FaEnvelope>
-              Contact
+              Phone
             </NavLink>
           </li>
         </ul>

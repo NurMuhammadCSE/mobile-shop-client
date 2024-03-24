@@ -24,7 +24,6 @@ const SignUp = () => {
       console.log(loggedUser);
       updateUserProfile(data.name, data.photoURL)
         .then(() => {
-          // create user entry in the database
           const userInfo = {
             name: data.name,
             email: data.email,
@@ -51,109 +50,95 @@ const SignUp = () => {
   return (
     <>
       <Helmet>
-        <title>Bistro Boss | Sign Up</title>
+        <title>Mobile Shop | Sign Up</title>
       </Helmet>
-      <div className="hero min-h-screen bg-base-200">
-        <div className="hero-content w-96 flex-col lg:flex-row-reverse">
-          <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-            <form onSubmit={handleSubmit(onSubmit)} className="card-body">
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text">Name</span>
-                </label>
-                <input
-                  type="text"
-                  {...register("name", { required: true })}
-                  name="name"
-                  placeholder="Name"
-                  className="input input-bordered"
-                />
-                {errors.name && (
-                  <span className="text-red-600">Name is required</span>
-                )}
-              </div>
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text">Photo URL</span>
-                </label>
-                <input
-                  type="text"
-                  {...register("photoURL", { required: true })}
-                  placeholder="Photo URL"
-                  className="input input-bordered"
-                />
-                {errors.photoURL && (
-                  <span className="text-red-600">Photo URL is required</span>
-                )}
-              </div>
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text">Email</span>
-                </label>
-                <input
-                  type="email"
-                  {...register("email", { required: true })}
-                  name="email"
-                  placeholder="email"
-                  className="input input-bordered"
-                />
-                {errors.email && (
-                  <span className="text-red-600">Email is required</span>
-                )}
-              </div>
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text">Password</span>
-                </label>
-                <input
-                  type="password"
-                  {...register("password", {
-                    required: true,
-                    minLength: 6,
-                    maxLength: 20,
-                    pattern: /(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z])/,
-                  })}
-                  placeholder="password"
-                  className="input input-bordered"
-                />
-                {errors.password?.type === "required" && (
-                  <p className="text-red-600">Password is required</p>
-                )}
-                {errors.password?.type === "minLength" && (
-                  <p className="text-red-600">Password must be 6 characters</p>
-                )}
-                {errors.password?.type === "maxLength" && (
-                  <p className="text-red-600">
-                    Password must be less than 20 characters
-                  </p>
-                )}
-                {errors.password?.type === "pattern" && (
-                  <p className="text-red-600">
-                    Password must have one Uppercase one lower case, one number
-                    and one special character.
-                  </p>
-                )}
-                <label className="label">
-                  <a href="#" className="label-text-alt link link-hover">
-                    Forgot password?
-                  </a>
-                </label>
-              </div>
-              <div className="form-control mt-6">
-                <input
-                  className="btn btn-primary"
-                  type="submit"
-                  value="Sign Up"
-                />
-              </div>
-            </form>
-            <p className="px-6">
-              <small>
-                Already have an account <Link to="/login">Login</Link>
-              </small>
-            </p>
-            <SocialLogin></SocialLogin>
-          </div>
+      <div className="flex justify-center items-center min-h-screen bg-base-200">
+        <div className="max-w-md w-full p-8 bg-white rounded-lg shadow-md">
+          <h2 className="text-3xl font-semibold text-center mb-4">Sign Up</h2>
+          <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+            <div>
+              <label className="block mb-1">Name</label>
+              <input
+                type="text"
+                {...register("name", { required: true })}
+                placeholder="Name"
+                className="input input-bordered w-full"
+              />
+              {errors.name && (
+                <span className="text-red-600">Name is required</span>
+              )}
+            </div>
+            <div>
+              <label className="block mb-1">Photo URL</label>
+              <input
+                type="text"
+                {...register("photoURL", { required: true })}
+                placeholder="Photo URL"
+                className="input input-bordered w-full"
+              />
+              {errors.photoURL && (
+                <span className="text-red-600">Photo URL is required</span>
+              )}
+            </div>
+            <div>
+              <label className="block mb-1">Email</label>
+              <input
+                type="email"
+                {...register("email", { required: true })}
+                placeholder="Email"
+                className="input input-bordered w-full"
+              />
+              {errors.email && (
+                <span className="text-red-600">Email is required</span>
+              )}
+            </div>
+            <div>
+              <label className="block mb-1">Password</label>
+              <input
+                type="password"
+                {...register("password", {
+                  required: true,
+                  minLength: 6,
+                  maxLength: 20,
+                  pattern: /(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z])/,
+                })}
+                placeholder="Password"
+                className="input input-bordered w-full"
+              />
+              {errors.password?.type === "required" && (
+                <span className="text-red-600">Password is required</span>
+              )}
+              {errors.password?.type === "minLength" && (
+                <span className="text-red-600">
+                  Password must be at least 6 characters
+                </span>
+              )}
+              {errors.password?.type === "maxLength" && (
+                <span className="text-red-600">
+                  Password must be less than 20 characters
+                </span>
+              )}
+              {errors.password?.type === "pattern" && (
+                <span className="text-red-600">
+                  Password must have at least one uppercase, one lowercase, one
+                  number, and one special character
+                </span>
+              )}
+            </div>
+            <button
+              type="submit"
+              className="w-full px-3 py-4 text-white bg-indigo-500 rounded-md hover:bg-indigo-600 focus:outline-none"
+            >
+              Sign Up
+            </button>
+          </form>
+          <p className="text-center mt-4">
+            Already have an account?{" "}
+            <Link to="/login" className="text-blue-600">
+              Log in
+            </Link>
+          </p>
+          <SocialLogin />
         </div>
       </div>
     </>

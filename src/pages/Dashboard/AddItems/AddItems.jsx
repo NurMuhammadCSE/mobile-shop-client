@@ -2,16 +2,13 @@ import { useForm } from "react-hook-form";
 import useAxiosPublic from "../../../hooks/useAxiosPublic";
 import useAxiosSecure from "../../../hooks/useAxiosSecure";
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
-import { useLoaderData, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
 const image_hosting_key = import.meta.env.VITE_IMAGE_HOSTING_KEY;
 const image_hosting_api = `https://api.imgbb.com/1/upload?key=${image_hosting_key}`;
 
-const UpdateItems = () => {
-  const { phone_name, brand, rating, description, price, _id } =
-    useLoaderData();
-
+const AddItems = () => {
   const { register, handleSubmit } = useForm();
   const axiosPublic = useAxiosPublic();
   const axiosSecure = useAxiosSecure();
@@ -27,7 +24,7 @@ const UpdateItems = () => {
     });
     if (res.data.success) {
       // now send the menu item data to the server with the image url
-      const menuItem = {
+      const phoneItem = {
         phone_name: data.phone_name,
         brand: data.brand,
         rating: parseFloat(data.rating),
@@ -36,15 +33,15 @@ const UpdateItems = () => {
         image: res.data.data.display_url,
       };
       //
-      const menuRes = await axiosSecure.patch(`/phone/${_id}`, menuItem);
+      const menuRes = await axiosSecure.post(`/phone`, phoneItem);
       console.log(menuRes.data);
-      if (menuRes.data.modifiedCount > 0) {
+      if (menuRes.data.insertedId) {
         // show success popup
         // reset();
         Swal.fire({
           position: "top-end",
           icon: "success",
-          title: `${data.phone_name} is updated to the menu.`,
+          title: `${data.phone_name} is updated to the Phone.`,
           showConfirmButton: false,
           timer: 1500,
         });
@@ -56,10 +53,7 @@ const UpdateItems = () => {
 
   return (
     <div>
-      <SectionTitle
-        heading="Update an Item"
-        subHeading="Refresh info"
-      ></SectionTitle>
+      <SectionTitle heading="Update an Item"></SectionTitle>
       <div>
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="flex gap-6">
@@ -69,7 +63,6 @@ const UpdateItems = () => {
               </label>
               <input
                 type="text"
-                defaultValue={phone_name}
                 placeholder="description Name"
                 {...register("phone_name", { required: true })}
                 required
@@ -82,7 +75,6 @@ const UpdateItems = () => {
               </label>
               <input
                 type="text"
-                defaultValue={rating}
                 placeholder="rating"
                 {...register("rating", { required: true })}
                 required
@@ -97,7 +89,6 @@ const UpdateItems = () => {
                 <span className="label-text">brand*</span>
               </label>
               <select
-                defaultValue={brand}
                 {...register("brand", { required: true })}
                 className="select select-bordered w-full"
               >
@@ -118,8 +109,7 @@ const UpdateItems = () => {
                 <span className="label-text">Price*</span>
               </label>
               <input
-                type="text"
-                defaultValue={price}
+                type="number"
                 placeholder="Price"
                 {...register("price", { required: true })}
                 className="input input-bordered w-full"
@@ -132,7 +122,6 @@ const UpdateItems = () => {
               <span className="label-text">description Details</span>
             </label>
             <textarea
-              defaultValue={description}
               {...register("description")}
               className="textarea textarea-bordered h-24"
               placeholder="Bio"
@@ -147,8 +136,8 @@ const UpdateItems = () => {
             />
           </div>
 
-          <button className="btn btn-outline border-0 border-b-4 mt-4">
-            Update menu Item
+          <button className=" btn btn-outline border-0 border-b-4 mt-4">
+            Add Phone Item
           </button>
         </form>
       </div>
@@ -156,4 +145,4 @@ const UpdateItems = () => {
   );
 };
 
-export default UpdateItems;
+export default AddItems;

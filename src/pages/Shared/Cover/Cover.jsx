@@ -7,17 +7,13 @@ const Cover = ({ img, title }) => {
       bgImage={img}
       bgImageAlt="the menu"
       strength={-200}
+      className="rounded-xl"
     >
       <div className="hero h-[700px]">
         <div className="hero-overlay bg-opacity-60"></div>
         <div className="hero-content text-center text-neutral-content">
           <div className="max-w-md">
             <h1 className="mb-5 text-5xl font-bold uppercase">{title}</h1>
-            <p className="mb-5">
-              The new mobile phone features state-of-the-art technology,
-              promising users an exceptional experience with its sleek design
-              and advanced features
-            </p>
           </div>
         </div>
       </div>

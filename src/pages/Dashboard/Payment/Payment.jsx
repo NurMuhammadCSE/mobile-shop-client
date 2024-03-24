@@ -10,7 +10,6 @@ const Payment = () => {
     <div>
       <SectionTitle
         heading="Payment"
-        subHeading="Please pay to eat"
       ></SectionTitle>
       <div>
         <Elements stripe={stripePromise}>

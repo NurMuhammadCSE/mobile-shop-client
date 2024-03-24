@@ -5,21 +5,25 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 
+import "./Category.css";
+
 // import required modules
 import { Pagination } from "swiper/modules";
 
-import img1 from "../../../assets/images/huawei.jpg";
-import img2 from "../../../assets/images/ihone2.jpg";
-import img3 from "../../../assets/images/iphone3.jpg";
-import img4 from "../../../assets/images/iphone.jpg";
+import img1 from "../../../assets/category/w.jpg";
+import img2 from "../../../assets/category/w2.jpg";
+import img3 from "../../../assets/category/w3.jpg";
+import img4 from "../../../assets/category/w4.jpg";
+import img5 from "../../../assets/category/w5.jpg";
+import img6 from "../../../assets/category/w6.jpg";
+
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 
 const Category = () => {
   return (
     <div className="my-10">
       <SectionTitle
-        heading={"Our Brand"}
-        subHeading={"Popular Brand"}
+        heading={"Smart Watch"}
       ></SectionTitle>
       <Swiper
         slidesPerView={3}
@@ -31,25 +35,22 @@ const Category = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src={img4} className="w-3/4" alt="" />
-          {/* <h3 className="text-4xl uppercase text-center -mt-16 text-white">
-            Salads
-          </h3> */}
+          <img src={img1} className="w-[200px]" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={img4} className="w-3/4" alt="" />
+          <img src={img2} className="w-[200px]" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={img4} className="w-3/4" alt="" />
+          <img src={img3} className="w-[200px]" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={img4} className="w-3/4" alt="" />
+          <img src={img4} className="w-[200px]" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={img4} className="w-3/4" alt="" />
+          <img src={img5} className="w-[200px]" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={img4} className="w-3/4" alt="" />
+          <img src={img6} className="w-[200px]" alt="" />
         </SwiperSlide>
       </Swiper>
     </div>

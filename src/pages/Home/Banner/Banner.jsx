@@ -5,6 +5,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 
+import "./Banner.css";
+
 // import required modules
 import { Navigation } from "swiper/modules";
 
@@ -23,11 +25,9 @@ const Banner = () => {
             <div className="hero-overlay bg-opacity-60"></div>
             <div className="hero-content text-center text-neutral-content">
               <div className="max-w-md">
-                <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
+                <h1 className="mb-5 text-5xl font-bold">Discover Your Perfect Mobile Device</h1>
                 <p className="mb-5">
-                  Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                  assumenda excepturi exercitationem quasi. In deleniti eaque
-                  aut repudiandae et a id nisi.
+                Mobile is becoming not only the new digital hub, but also the bridge to the physical world
                 </p>
               </div>
             </div>
@@ -44,11 +44,9 @@ const Banner = () => {
             <div className="hero-overlay bg-opacity-60"></div>
             <div className="hero-content text-center text-neutral-content">
               <div className="max-w-md">
-                <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
+                <h1 className="mb-5 text-5xl font-bold">Unlock the Latest in Mobile Innovation</h1>
                 <p className="mb-5">
-                  Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                  assumenda excepturi exercitationem quasi. In deleniti eaque
-                  aut repudiandae et a id nisi.
+                The future of mobile is the future of online. It is how people access online content now
                 </p>
               </div>
             </div>
@@ -65,11 +63,9 @@ const Banner = () => {
             <div className="hero-overlay bg-opacity-60"></div>
             <div className="hero-content text-center text-neutral-content">
               <div className="max-w-md">
-                <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
+                <h1 className="mb-5 text-5xl font-bold">Shop the Best Mobile Deals Today</h1>
                 <p className="mb-5">
-                  Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                  assumenda excepturi exercitationem quasi. In deleniti eaque
-                  aut repudiandae et a id nisi.
+                Your mobile device has quickly become the easiest portal into your digital self.
                 </p>
               </div>
             </div>
@@ -86,11 +82,9 @@ const Banner = () => {
             <div className="hero-overlay bg-opacity-60"></div>
             <div className="hero-content text-center text-neutral-content">
               <div className="max-w-md">
-                <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
+                <h1 className="mb-5 text-5xl font-bold">Upgrade Your Tech with Our Mobile Selection</h1>
                 <p className="mb-5">
-                  Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                  assumenda excepturi exercitationem quasi. In deleniti eaque
-                  aut repudiandae et a id nisi.
+                The mobile phone is a personal object; it must be appealing in design, lightweight, easy to use and affordable
                 </p>
               </div>
             </div>
@@ -107,11 +101,9 @@ const Banner = () => {
             <div className="hero-overlay bg-opacity-60"></div>
             <div className="hero-content text-center text-neutral-content">
               <div className="max-w-md">
-                <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
+                <h1 className="mb-5 text-5xl font-bold">Elevate Your Mobile Experience with Us</h1>
                 <p className="mb-5">
-                  Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                  assumenda excepturi exercitationem quasi. In deleniti eaque
-                  aut repudiandae et a id nisi.
+                The mobile phone is a symbol of status. It was a very expensive object
                 </p>
               </div>
             </div>
