@@ -1,14 +1,15 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
-import { FaShoppingCart } from "react-icons/fa";
 import userIcon from "../../../assets/images/profile.png";
 import useCart from "../../../hooks/useCart";
+import useAdmin from "../../../hooks/useAdmin";
 
 const Navbar = () => {
   let [isOpen, setIsOpen] = useState(true);
   const { user, logOut } = useAuth();
   const [cart] = useCart();
+  const [isAdmin] = useAdmin();
 
   const navOptions = (
     <>
@@ -18,9 +19,20 @@ const Navbar = () => {
       <li>
         <Link to={`/order/Huawei`}>Order</Link>
       </li>
-      <li>
-        <Link to={`/dashboard`}>Dashboard</Link>
-      </li>
+      {
+        // user ? 'true': 'false'
+        // user ? condition ? 'double true' : 'one true' : 'false'
+      }
+      {user && isAdmin && (
+        <li>
+          <Link to="/dashboard/adminHome">Dashboard</Link>
+        </li>
+      )}
+      {user && !isAdmin && (
+        <li>
+          <Link to="/dashboard/userHome">Dashboard</Link>
+        </li>
+      )}
       <li>
         <Link to="/dashboard/cart">
           <div className="indicator">
