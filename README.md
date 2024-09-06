@@ -8,11 +8,11 @@ Welcome to **Mobile Shop** – your ultimate destination for mobile phone shoppi
 
 ### Admin Login
 - **Email:** web@programming-hero.com
-- **Password:** ph-password
+- **Password:** asdf123A@
 
 ### User Login
 - **Email:** web1@programming-hero.com
-- **Password:** ph-password
+- **Password:** asdf123A@
 
 Feel free to use these credentials to explore both admin and user functionalities of Mobile Shop. Enjoy your experience!
 
